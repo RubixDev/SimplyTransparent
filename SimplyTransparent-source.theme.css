@@ -1,0 +1,63 @@
+@import url("https://dav1312.github.io/BD/SimpleBackground/main.css");
+
+/* Monospace font */
+.markup-eYLPri pre {
+    font-family: var(--font-code), Consolas, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier, monospace;
+}
+.markup-eYLPri code.inline {
+    font-family: var(--font-code), Consolas, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier, monospace;
+}
+code {
+    font-family: var(--font-code), Consolas, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier, monospace;
+}
+
+/* Show timestamp for edits */
+/* CREDIT: https://discord.com/channels/86004744966914048/836694789898109009/949934727266177045 */
+.timestamp-p1Df1m:not(.timestampInline-_lS3aK, .timestampVisibleOnHover-9PEuZS) time::after {
+    content: " (" attr(aria-label) ")";
+    color: var(--text-muted);
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: lowercase;
+}
+.edited-1v5nT8:not(.message-translate-indicator) {
+    display: none;
+}
+
+/* Make bold text in changelog channels use header font */
+/* CREDIT: https://github.com/PlusInsta/discord-plus/blob/a71b9a52cf77c2ef83fc109f3e3e80c5e9c2a66c/assets/extras.css#L49-L51 */
+[aria-label="changelog (channel)"] strong {
+    font-family: var(--font-header), 'Helvetica Neue', 'Helvetica', 'Whitney', sans-serif;
+}
+
+/* Names, titles, and headers font */
+/* CREDIT: https://github.com/PlusInsta/discord-plus/blob/a71b9a52cf77c2ef83fc109f3e3e80c5e9c2a66c/DiscordPlus-source.theme.css#L240-L267 */
+header, h1,
+.nameAndDecorators-3ERwy2, /*name in member list*/
+.headerNameWrapper-3res2c, /*nickname in profile popup*/
+.username-h_Y3Us, /*username in chat*/
+.headerText-15Q25Z, /*username#tag in profile popup*/
+.nickname-2gQ76l, /*nickname in profile popup*/
+.nameTag-sc-gpq, /*your username in the bottom-left*/
+.detailsInner-2IFSJC, /*settings: your username in My Account*/
+.activityName-3YXl6e, /*user's activity name, includes song and author titles*/
+.emojiUploader-1f0pVx, /*server settings: emoji's uploader*/
+.userHook-3AdCBF, /*server settings: username in audit log*/
+.secondaryHeader-2oeRPO, /*server settings: integrations row headers such as bot names*/
+.roleName-2ZJJYR, /*role name in profile*/
+.roleName-35qCvR, .roleName-3910zV, /*role name in server settings*/
+.membersGroup-2eiWxl, /*role name in member list*/
+.roleRow-3HnunM, /*role name in context menu*/
+.roleMention-11Aaqi, /*role name mention in chat*/
+.wrapper-1ZcZW-, /*username or channel name mention in chat*/
+[data-slate-object="inline"] .mention, /*mention in message box*/
+.systemMessage-1H1Z20 .anchorUnderlineOnHover-2qPutX, /* links / usernames in system messages */
+.name-3BUDLf, /*category name in sidebar*/
+.name-28HaxV, /*channel name in sidebar*/
+.title-17SveM, /*channel name in chat header*/
+.title-3hptVQ, /*channel name in channel topic popup*/
+.bd-author, .bd-meta .bd-link, /*BD: plugin/theme author*/
+.timestamp-p1Df1m /*chat message hover timestamp (counts as a header)*/ {
+    font-family: var(--font-header), 'Helvetica Neue', 'Helvetica', 'Whitney', sans-serif !important;
+}
